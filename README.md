@@ -4,8 +4,8 @@
 Duty Posts at the entrance and exit of the Dining Hall will check in students from by dorm. This simple webpage will track seating totals by dorm.
 
 ## Project Team
-*Cannon Caspar, Class of 2021 <cpcaspar@mxschool.edu>*
-*Shreya Jain, Class of 2021 <sjain@mxschool.edu>*
+*Cannon Caspar, Class of 2021 cpcaspar@mxschool.edu* <br>
+*Shreya Jain, Class of 2021 sjain@mxschool.edu>* <br>
 *Charles J McDonald, Academic Technology Specialist <cjmcdonald@mxschool.edu>*
 
 ## History
