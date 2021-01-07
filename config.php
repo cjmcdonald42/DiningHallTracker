@@ -8,10 +8,11 @@ session_start();
 global $DB;
 $DB = new stdClass();
 
-$DB->server_name = '';
-$DB->username = '';
-$DB->password = '';
-$DB->name = '';
+// Enter DB connection data below
+$DB->server_name = 'localhost';
+$DB->username = 'root';
+$DB->password = 'root';
+$DB->name = 'dininghalltracker';
 
 $DB = new mysqli($DB->server_name, $DB->username, $DB->password, $DB->name);
 
