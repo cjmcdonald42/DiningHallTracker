@@ -18,16 +18,21 @@ $dorm_dining_list = get_dorm_dining_data();
 </script>
 
 <p>
+<table>
 <?php
 // example code. iterates through the entire table. can insert html in the middle of the loop
 if($dorm_dining_list) {
 	foreach($dorm_dining_list as $dorm) {
+		echo '<tr>';
 		foreach($dorm as $col) {
+			echo '<td>';
 			echo $col.' ';
+			echo '</td>';
 		}
-		echo '<br>';
+		echo '</tr>';
 	}
 }
 else echo 'No dorm data found';
 ?>
+</table>
 </p>
