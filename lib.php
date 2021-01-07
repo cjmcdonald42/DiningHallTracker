@@ -36,3 +36,22 @@ function get_dorm_dining_data() {
 	}
 	return $dorm_dining_list;
 }
+
+/**
+* Increments or decrements the num_diners count for the specified dorm
+*
+* @param string dorm_name, the name of the dorm
+* @param boolean increment, whether or not to increment.
+*			  if false, decreases num_diners by one
+* @return boolean true if successful, false if dorm name not found
+*/
+function update_dorm_num_diners($dorm_name, $increment) {
+	global $DB;
+	$modifier = $increment ? "+1" : "-1"
+	$sql = "UPDATE dorm_dining
+		   SET num_diners = num_diners{$modifier}
+		   WHERE dorm_name = {$dorm_name};";
+	$query = $DB->query($sql);
+	if($query->error) return 0;
+	else return 1;
+}
