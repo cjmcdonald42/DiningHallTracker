@@ -47,11 +47,11 @@ function get_dorm_dining_data() {
 */
 function update_dorm_num_diners($dorm_name, $increment) {
 	global $DB;
-	$modifier = $increment ? "+1" : "-1"
+	$modifier = $increment ? "+1" : "-1";
 	$sql = "UPDATE dorm_dining
 		   SET num_diners = num_diners{$modifier}
-		   WHERE dorm_name = {$dorm_name};";
+		   WHERE dorm_name = '{$dorm_name}';";
 	$query = $DB->query($sql);
-	if($query->error) return 0;
+	if($DB->error) return 0;
 	else return 1;
 }
