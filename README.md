@@ -9,7 +9,8 @@ Duty Posts at the entrance and exit of the Dining Hall will check in students fr
 *Charles J McDonald, Academic Technology Specialist cjmcdonald@mxschool.edu*
 
 ## History
-Maturity: Alpha. This project is being developed and designed simultaneously.
+Maturity: Beta v0.1
+This is now a live proof-of-concept that we can share with Team 2021.
 
 ## License
 [GNU General Public License v3.0](/COPYING.txt)
