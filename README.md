@@ -1,7 +1,7 @@
 # DiningHallTracker
 
 ## Project Overview
-Duty Posts at the entrance and exit of the Dining Hall will check in students from by dorm. This simple webpage will track seating totals by dorm.
+Duty Posts at the entrance and exit of the Dining Hall will check students in and out by dorm tracking current seating.
 
 ## Project Team
 *Cannon Caspar, Class of 2021 cpcaspar@mxschool.edu* <br>
