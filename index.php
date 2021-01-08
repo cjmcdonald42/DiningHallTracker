@@ -16,6 +16,10 @@ if(isset($_POST['update_diners'])) {
 */
 $dorm_dining_list = get_dorm_dining_data();
 ?>
+
+<head>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
 <body>
 <script>
 	$(document).ready(function() {
@@ -39,9 +43,16 @@ $dorm_dining_list = get_dorm_dining_data();
 		});
 	});
 </script>
-
+<h1>Middlesex Dining Hall Tracker</h1>
 <p>
-<table class='dorm_dining_table'>
+<table align="center" class='dorm_dining_table'>
+	<tr>
+		<th>Dorm Id</th>
+		<th>Dorm Name</th>
+		<th>Number of Seats at this Table</th>
+		<th>Num Diners</th>
+		<th>Buttons</th>
+	</tr>
 <?php
 // example code. iterates through the entire table. can insert html in the middle of the loop
 if($dorm_dining_list) {
@@ -53,8 +64,8 @@ if($dorm_dining_list) {
 			echo '</td>';
 		} ?>
 		<td>
-			<button class='update_diners_button' value='-' name='<?php echo $dorm['dorm_name']?>' type='button'>-</button>
-			<button class='update_diners_button' value='+' name='<?php echo $dorm['dorm_name']?>' type='button'>+</button>
+			<button class='update_diners_button add-button' value='-' name='<?php echo $dorm['dorm_name']?>' type='button'>-</button>
+			<button class='update_diners_button subtract-button' value='+' name='<?php echo $dorm['dorm_name']?>' type='button'>+</button>
 		</td>
 		<?php
 		echo '</tr>';

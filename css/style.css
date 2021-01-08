@@ -1,7 +1,68 @@
 table {
-    width: 100%;
+    /* width: 100%; */
+    /* border: 1px solid black; */
+    /* border-radius: 15px; */
 }
 
 td {
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    font-weight: 200;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    font-family:'Arial';
+}
+
+.add-button{
+    background-color: greenyellow;
+    border: 0px;
+}
+
+.add-button:hover {
+    background-color: green;
+}
+
+button {
     padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 25px;
+}
+
+.subtract-button{
+    background-color: red;
+    border: 0px;
+}
+
+.subtract-button:hover {
+    background-color: rebeccapurple;
+}
+
+th {
+    font-weight: 900;
+}
+
+.dorm_dining_table {
+    position: center;
+    /* padding-left: 100px; */
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    padding: 100px;
+    font-family:'Geneva';
+    color: white;
+    background-color: #cf003d;
+    border: 0px;
+    margin: 0px;
+    font-weight: 100;
 }
