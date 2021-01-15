@@ -1,7 +1,13 @@
-table {
-    /* width: 100%; */
-    /* border: 1px solid black; */
-    /* border-radius: 15px; */
+h1 {
+    text-align: center;
+    font-family:'Geneva';
+    padding-bottom: 50px;
+    padding-top: 20px;
+    color: white;
+    /* background-color: #cf003d; */
+    border: 0px;
+    margin: 0px;
+    font-weight: 100;
 }
 
 td {
@@ -56,13 +62,14 @@ body {
     margin: 0px;
 }
 
-h1 {
-    text-align: center;
-    padding: 100px;
-    font-family:'Geneva';
-    color: white;
+.header {
+    padding-top: 20px;
     background-color: #cf003d;
-    border: 0px;
-    margin: 0px;
-    font-weight: 100;
+}
+
+.mx_logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
 }

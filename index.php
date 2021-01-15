@@ -43,7 +43,10 @@ $dorm_dining_list = get_dorm_dining_data();
 		});
 	});
 </script>
-<h1>Middlesex Dining Hall Tracker</h1>
+<div class="header">
+	<img src="./assets/black_mx_logo.png" alt="Middlesex Logo" class="mx_logo">
+	<h1>Middlesex Dining Hall Tracker</h1>
+</div>
 <p>
 <table align="center" class='dorm_dining_table'>
 	<tr>
