@@ -1,13 +1,13 @@
 h1 {
     text-align: center;
-    font-family:'Geneva';
+    font-family:'Open Sans';
     padding-bottom: 50px;
     padding-top: 20px;
     color: white;
     /* background-color: #cf003d; */
     border: 0px;
     margin: 0px;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 td {
@@ -21,7 +21,7 @@ th, td {
     text-align: left;
     border-bottom: 1px solid #ddd;
     border-left: 1px solid #ddd;
-    font-family:'Arial';
+    font-family:'Open Sans';
 }
 
 .add-button{
@@ -60,11 +60,18 @@ th {
 
 body {
     margin: 0px;
+    font-family:'Open Sans';
 }
 
 .header {
     padding-top: 20px;
     background-color: #cf003d;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #cf003d;
+    font-size: 12px;
 }
 
 .mx_logo {

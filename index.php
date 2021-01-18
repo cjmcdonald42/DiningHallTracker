@@ -19,6 +19,8 @@ $dorm_dining_list = get_dorm_dining_data();
 
 <head>
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
 <script>
@@ -77,4 +79,11 @@ else echo 'No dorm data found';
 ?>
 </table>
 </p>
+<p class="footer"><i>Project written by: <br>
+Cannon Caspar, Class of 2021 cpcaspar@mxschool.edu <br>
+Shreya Jain, Class of 2021 sjain@mxschool.edu <br>
+Charles J McDonald, Academic Technology Specialist cjmcdonald@mxschool.edu <br>
+GitHub: <a href="https://github.com/mxschool/DiningHallTracker"> mxschool/DiningHallTracker </a></i></p>
+
+
 </body>
