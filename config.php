@@ -10,10 +10,11 @@ $DB = new stdClass();
 
 // Enter DB connection data below
 $DB->server_name = 'localhost';
-$DB->username = 'cjmcdonald';
-$DB->password = 'onetoughzebra';
+$DB->username = 'dhtracker';
+$DB->password = 'dhtracker';
 $DB->name = 'dhtracker';
+$DB->port = 3306;
 
-$DB = new mysqli($DB->server_name, $DB->username, $DB->password, $DB->name);
+$DB = new mysqli($DB->server_name, $DB->username, $DB->password, $DB->name, $DB->port);
 
 date_default_timezone_set('America/New_York');
