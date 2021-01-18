@@ -44,15 +44,14 @@ $dorm_dining_list = get_dorm_dining_data();
 	});
 </script>
 <div class="header">
-	<img src="./assets/black_mx_logo.png" alt="Middlesex Logo" class="mx_logo">
-	<h1>Middlesex Dining Hall Tracker</h1>
+	<h1><img src="./assets/mx_shield.png" alt="Middlesex" class="mx_logo"> Dining Hall Tracker</h1>
 </div>
 <p>
 <table align="center" class='dorm_dining_table'>
 	<tr>
 		<th>Dorm Id</th>
 		<th>Dorm Name</th>
-		<th>Number of Seats at this Table</th>
+		<th>Number of Seats</th>
 		<th>Num Diners</th>
 		<th>Buttons</th>
 	</tr>

@@ -1,4 +1,4 @@
-# DiningHallTracker
+# ![Middlesex Shield](/assets/mx_shield.png) DiningHallTracker
 
 ## Project Overview
 Duty Posts at the entrance and exit of the Dining Hall will check students in and out by dorm tracking current seating.
@@ -9,8 +9,11 @@ Duty Posts at the entrance and exit of the Dining Hall will check students in an
 *Charles J McDonald, Academic Technology Specialist cjmcdonald@mxschool.edu*
 
 ## History
-Maturity: Beta v0.1
-This is now a live proof-of-concept that we can share with Team 2021.
+Maturity: Beta
+Version: 210118
+Release: 0.0 - Prerelease Status
+
+With much enthusiasm, we've been given the green light for this project. This version is now live on the Moodle Development Server: moodledev.mxschool.edu
 
 ## License
 [GNU General Public License v3.0](/COPYING.txt)
