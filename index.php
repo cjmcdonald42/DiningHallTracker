@@ -66,13 +66,13 @@ if($dorm_dining_list) {
 		$color;
 		foreach($dorm as $col) {
 			if($count==3) {
-				if($col.' '<=1){
-					echo '<td class=\'red-background-td\'>';
+				if($col.' '<=6){
+					echo '<td class=\'green-background-td\'>';
 				}
-				elseif($col.' '<=3) {
+				elseif($col.' '<=8) {
 					echo '<td class=\'yellow-background-td\'>';
 				}
-				else echo '<td class=\'green-background-td\'>';
+				else echo '<td class=\'red-background-td\'>';
 			}
 			else echo '<td>';
 			echo $col.' ';
