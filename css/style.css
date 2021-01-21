@@ -79,3 +79,15 @@ body {
     margin-right: auto;
     width: 5%;
 }
+
+.yellow-background-td {
+    background-color: yellow;
+}
+
+.red-background-td {
+    background-color: red;
+}
+
+.green-background-td {
+    background-color: green;
+}

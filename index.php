@@ -51,21 +51,33 @@ $dorm_dining_list = get_dorm_dining_data();
 <p>
 <table align="center" class='dorm_dining_table'>
 	<tr>
-		<th>Dorm Id</th>
-		<th>Dorm Name</th>
-		<th>Number of Seats</th>
-		<th>Num Diners</th>
-		<th>Buttons</th>
+		<th>Dorm Id</th> <!--0-->
+		<th>Dorm Name</th> <!--1-->
+		<th>Number of Seats</th> <!--2-->
+		<th>Num Diners</th> <!--3-->
+		<th>Buttons</th> <!--4-->
 	</tr>
 <?php
 // example code. iterates through the entire table. can insert html in the middle of the loop
 if($dorm_dining_list) {
 	foreach($dorm_dining_list as $dorm) {
 		echo '<tr>';
+		$count = 0;
+		$color;
 		foreach($dorm as $col) {
-			echo '<td>';
+			if($count==3) {
+				if($col.' '<=1){
+					echo '<td class=\'red-background-td\'>';
+				}
+				elseif($col.' '<=3) {
+					echo '<td class=\'yellow-background-td\'>';
+				}
+				else echo '<td class=\'green-background-td\'>';
+			}
+			else echo '<td>';
 			echo $col.' ';
 			echo '</td>';
+			$count = $count + 1;
 		} ?>
 		<td>
 			<button class='update_diners_button add-button' value='-' name='<?php echo $dorm['dorm_name']?>' type='button'>-</button>

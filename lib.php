@@ -55,3 +55,4 @@ function update_dorm_num_diners($dorm_name, $increment) {
 	if($DB->error) return 0;
 	else return 1;
 }
+
