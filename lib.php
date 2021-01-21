@@ -53,6 +53,10 @@ function update_dorm_num_diners($dorm_name, $increment) {
 		   SET num_diners = num_diners{$modifier}
 		   WHERE dorm_name = '{$dorm_name}';";
 	$query = $DB->query($sql);
+	$sql2 = "UPDATE dorm_dining
+			SET seats_remaining = num_seats - num_diners
+			WHERE dorm_name = '{$dorm_name}';";
+	$query2 = $DB->query($sql2);
 	if($DB->error) return 0;
 	else return 1;
 }

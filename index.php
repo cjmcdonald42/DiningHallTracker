@@ -55,21 +55,40 @@ $dorm_dining_list = get_dorm_dining_data();
 		<th>Dorm Name</th> <!--1-->
 		<th>Total Seats</th> <!--2-->
 		<th>Num Diners</th> <!--3-->
-		<th>Buttons</th> <!--4-->
+		<th>Seats Remaining</th><!--4-->
+		<th>Buttons</th> <!--5-->
 	</tr>
 <?php
+// some constants that are used in the loop for color coding 
+
+$num_diners_col_index = 3;
+$seats_remaining_col_index = 4;
+$seats_remain_green_cutoff = 4;
+$seats_remain_yellow_cutoff = 2;
+$num_seats_per_table = 10;
+
 // example code. iterates through the entire table. can insert html in the middle of the loop
+
 if($dorm_dining_list) {
 	foreach($dorm_dining_list as $dorm) {
 		echo '<tr>';
 		$count = 0;
-		$color;
 		foreach($dorm as $col) {
-			if($count==3) {
-				if($col.' '<=6){
+			// the following if/elseif/else statements are used for color coding
+			if($count == $num_diners_col_index) {
+				if($col.' '<= ($num_seats_per_table-$seats_remain_green_cutoff)){
 					echo '<td class=\'green-background-td\'>';
 				}
-				elseif($col.' '<=8) {
+				elseif($col.' '<= ($num_seats_per_table-$seats_remain_yellow_cutoff)) {
+					echo '<td class=\'yellow-background-td\'>';
+				}
+				else echo '<td class=\'red-background-td\'>';
+			}
+			else if($count == $seats_remaining_col_index) {
+				if($col.' '>= $seats_remain_green_cutoff){
+					echo '<td class=\'green-background-td\'>';
+				}
+				elseif($col.' '>= $seats_remain_yellow_cutoff) {
 					echo '<td class=\'yellow-background-td\'>';
 				}
 				else echo '<td class=\'red-background-td\'>';
@@ -79,6 +98,7 @@ if($dorm_dining_list) {
 			echo '</td>';
 			$count = $count + 1;
 		} ?>
+		<!-- buttons -->
 		<td>
 			<button class='update_diners_button add-button' value='-' name='<?php echo $dorm['dorm_name']?>' type='button'>-</button>
 			<button class='update_diners_button subtract-button' value='+' name='<?php echo $dorm['dorm_name']?>' type='button'>+</button>
