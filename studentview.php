@@ -55,7 +55,8 @@ $dorm_dining_list = get_dorm_dining_data();
 		<th>Dorm Id</th> <!--0-->
 		<th>Dorm Name</th> <!--1-->
 		<th>Total Seats</th> <!--2-->
-		<th>Num Diners</th> <!--3-->
+        <th>Num Diners</th> <!--3-->
+        <th>Seats Remaining</th>
 	</tr>
 <?php
 // example code. iterates through the entire table. can insert html in the middle of the loop

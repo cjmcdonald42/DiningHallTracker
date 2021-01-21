@@ -18,6 +18,7 @@ if($table_check->num_rows < 1) {
 	$DB->query($sql);
 	echo $DB->error;
 }
+$add_seats_remaining_col = $DB->query("ALTER TABLE dorm_dining add seats_remaining int not null;");
 
 /**
 * Gets all data from the table 'dorm_dining'
