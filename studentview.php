@@ -54,7 +54,7 @@ $dorm_dining_list = get_dorm_dining_data();
 	<tr>
 		<th>Dorm Id</th> <!--0-->
 		<th>Dorm Name</th> <!--1-->
-		<th>Number of Seats</th> <!--2-->
+		<th>Total Seats</th> <!--2-->
 		<th>Num Diners</th> <!--3-->
 	</tr>
 <?php
