@@ -59,7 +59,7 @@ $dorm_dining_list = get_dorm_dining_data();
 		<th>Buttons</th> <!--5-->
 	</tr>
 <?php
-// some constants that are used in the loop for color coding 
+// some constants that are used in the loop for color coding
 
 $num_diners_col_index = 3;
 $seats_remaining_col_index = 4;
@@ -100,8 +100,8 @@ if($dorm_dining_list) {
 		} ?>
 		<!-- buttons -->
 		<td>
-			<button class='update_diners_button add-button' value='-' name='<?php echo $dorm['dorm_name']?>' type='button'>-</button>
-			<button class='update_diners_button subtract-button' value='+' name='<?php echo $dorm['dorm_name']?>' type='button'>+</button>
+			<button class='update_diners_button add-button' value='+' name='<?php echo $dorm['dorm_name']?>' type='button'>+</button>
+			<button class='update_diners_button subtract-button' value='-' name='<?php echo $dorm['dorm_name']?>' type='button'>-</button>
 		</td>
 		<?php
 		echo '</tr>';
