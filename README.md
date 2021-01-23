@@ -9,11 +9,10 @@ Duty Posts at the entrance and exit of the Dining Hall will check students in an
 *Charles J McDonald, Academic Technology Specialist cjmcdonald@mxschool.edu*
 
 ## History
-Maturity: Beta
-Version: 210118
-Release: 0.0 - Prerelease Status
+Maturity: Release
+Version: 210123
 
-With much enthusiasm, we've been given the green light for this project. This version is now live on the Moodle Development Server: moodledev.mxschool.edu
+The Admin Team has asked for a workflow to monitor numbers of students in the dining hall by dorm. This tracker will be used at duty stations posted at the entrance of the dining hall and is a simple counter.
 
 ## License
 [GNU General Public License v3.0](/COPYING.txt)
