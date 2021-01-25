@@ -1,4 +1,4 @@
-# ![Middlesex Shield](/assets/mx_shield.png) DiningHallTracker
+# ![Middlesex Shield](/assets/mx_shield_small.png) DiningHallTracker
 
 ## Project Overview
 Duty Posts at the entrance and exit of the Dining Hall will check students in and out by dorm tracking current seating.
