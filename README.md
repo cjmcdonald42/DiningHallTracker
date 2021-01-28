@@ -6,13 +6,13 @@ A view-only version of this page exists for community members to monitor the cur
 This project was a special request from Terry Cunningham on behalf of the Administrative Team.
 
 ## Project Team
-*Cannon Caspar, Class of 2021 cpcaspar@mxschool.edu* <br>
+*[Cannon Caspar](https://github.com/Cannon544), Class of 2021 cpcaspar@mxschool.edu* <br>
 Cannon is in his senior year at Middlesex. He is a leader on our Moodle Development Team who's work includes our COVIDpass system and the development of our new Deans' Permission form. <br>
 
-*Shreya Jain, Class of 2021 sjain@mxschool.edu* <br>
+*[Shreya Jain](https://github.com/shreyaj1212), Class of 2021 sjain@mxschool.edu* <br>
 Shreya is in her senior year at Middlesex. She is an ambitious community leader who has organized hack-a-thons and heads our programming club and our student newspaper, The Anvil. Last year, she took the Anvil online increasing its accessibility to remote students and alums.<br>
 
-*Charles J McDonald, Academic Technology Specialist cjmcdonald@mxschool.edu*
+*[Charles J McDonald](https://github.com/MXchuck), Academic Technology Specialist cjmcdonald@mxschool.edu*
 
 ## History
 Maturity: Live Beta <br>
