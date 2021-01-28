@@ -25,12 +25,12 @@ th, td {
 }
 
 .add-button{
-    background-color: green;
+    background-color: lightgreen;
     border: 0px;
 }
 
 .add-button:hover {
-    background-color: green;
+    background-color: lightgreen;
 }
 
 button {
@@ -41,12 +41,12 @@ button {
 }
 
 .subtract-button{
-    background-color: red;
+    background-color: lightpink;
     border: 0px;
 }
 
 .subtract-button:hover {
-    background-color: red;
+    background-color: lightpink;
 }
 
 th {
@@ -86,9 +86,9 @@ body {
 }
 
 .red-background-td {
-    background-color: red;
+    background-color: lightpink;
 }
 
 .green-background-td {
-    background-color: green;
+    background-color: lightgreen;
 }
