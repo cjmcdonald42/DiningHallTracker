@@ -44,6 +44,8 @@ $dorm_dining_list = get_dorm_dining_data();
 			});
 		});
 	});
+
+	
 </script>
 <div class="header">
 	<h1><img src="./assets/mx_shield.png" alt="Middlesex" class="mx_logo"> Dining Hall Tracker</h1>
@@ -63,9 +65,8 @@ $dorm_dining_list = get_dorm_dining_data();
 
 $num_diners_col_index = 3;
 $seats_remaining_col_index = 4;
-$seats_remain_green_cutoff = 4;
-$seats_remain_yellow_cutoff = 2;
-$num_seats_per_table = 10;
+$green_cutoff = 4;
+$yellow_cutoff = 2;
 
 // example code. iterates through the entire table. can insert html in the middle of the loop
 
@@ -74,26 +75,36 @@ if($dorm_dining_list) {
 		echo '<tr>';
 		$count = 0;
 		foreach($dorm as $col) {
-			// the following if/elseif/else statements are used for color coding
-			if($count == $num_diners_col_index) {
-				if($col.' '<= ($num_seats_per_table-$seats_remain_green_cutoff)){
+			// the following if-statements are for color coding
+			if($count == 2) { // the row of num seats
+				$num_seats = $col.' ';
+				echo '<td>';
+			}
+			elseif($count == 3) { // the num diners row
+				if($col.' '<= ($num_seats-$green_cutoff)){
 					echo '<td class=\'green-background-td\'>';
 				}
-				elseif($col.' '<= ($num_seats_per_table-$seats_remain_yellow_cutoff)) {
+				elseif($col.' '<= ($num_seats-$yellow_cutoff)) {
 					echo '<td class=\'yellow-background-td\'>';
 				}
-				else echo '<td class=\'red-background-td\'>';
+				else {
+					echo '<td class=\'red-background-td\'>';
+				}
 			}
-			else if($count == $seats_remaining_col_index) {
-				if($col.' '>= $seats_remain_green_cutoff){
+			elseif($count == 4) { // the seats remaining row
+				if($col.' '>= $green_cutoff){
 					echo '<td class=\'green-background-td\'>';
 				}
-				elseif($col.' '>= $seats_remain_yellow_cutoff) {
+				elseif($col.' '>= $yellow_cutoff) {
 					echo '<td class=\'yellow-background-td\'>';
 				}
-				else echo '<td class=\'red-background-td\'>';
+				else {
+					echo '<td class=\'red-background-td\'>';
+				}
 			}
-			else echo '<td>';
+			else {
+				echo '<td>';
+			}
 			echo $col.' ';
 			echo '</td>';
 			$count = $count + 1;
@@ -110,6 +121,9 @@ if($dorm_dining_list) {
 else echo 'No dorm data found';
 ?>
 </table>
+
+<button class='reset_button'>Reset</button>
+
 </p>
 <p class="footer"><i>Project written by: <br>
 Cannon Caspar, Class of 2021 cpcaspar@mxschool.edu <br>
